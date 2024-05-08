@@ -67,13 +67,13 @@ export default function Home() {
     <div>
       <span id="loading">Loading</span>
       <div id="lineprofile">
-        <img />
+
         <div>Hello </div>
-        <div>UID: your UID</div>
+
         <Profile profile={data} />
         <div>
-          <input onChange={(e) => setInput(e.target.value)} type="text"></input>
-          <button className="border" onClick={sendMessage}>send message</button>
+          <input className="bg-green-200" onChange={(e) => setInput(e.target.value)} type="text"></input>
+          <button className="border " onClick={sendMessage}>send message</button>
         </div>
 
         <button onClick={logout}>logout</button>
